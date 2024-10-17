@@ -1,0 +1,212 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://www.ngoisaoso.vn/uploads/news/2015/03/19/Best-Website-Background-Images14.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed; 
+    color: #333;
+    padding: 0;
+    margin: 0;
+
+    
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #e0f7fa;
+}
+.navbar {
+    background-color: #5d9aeef6;
+    padding: 10px;
+    display: flex;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+.navbar a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 0 15px;
+}
+
+.navbar a:hover {
+    background-color: #383939;
+    border-radius: 4px;
+}
+.container {
+    max-width: 1200px;
+    margin: 80px auto 0 auto;
+    text-align: center;
+}
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    margin-top: 30px;
+    justify-items: center;
+}
+.card {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf-wQqg6ZJKV6RJV514bbntXgdNKRbNSjRuSjmRhKBs3TvuMmb8ToyhpoK3ANDklO8yuM&usqp=CAU);
+    background-size: cover;
+    background-position: center; 
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    flex-direction: column;
+    max-width: 250px;
+    justify-content: space-between;
+    height: 200px;
+    display: flex ;
+}
+.card img {
+   max-width: 80px;
+    margin-bottom: 15px;
+}
+.card button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    width: 100%;
+    margin-top: auto;
+
+}
+.card button:hover {
+    background-color:#0056b3;
+    
+}
+/*giao diện phần lesson
+/* Mục con cho phần nội dung bài học */
+.lesson-container {
+    display: flex;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Sidebar chứa danh sách bài học */
+.sidebar {
+    width: 25%;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-right: 1px solid #ddd;
+    border-radius: 10px 0 0 10px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #007BFF;
+    padding: 10px 15px;
+    display: block;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+    background-color: #f0f0f0;
+}
+
+/* Phần nội dung chính của bài học */
+.lesson-content {
+    width: 75%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 0 10px 10px 0;
+}
+
+.lesson-content h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #007BFF;
+}
+
+.lesson-content p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.lesson-content ul {
+    padding-left: 20px;
+    margin: 20px 0;
+}
+
+.lesson-content ul li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* Style cho các nút trong mục con */
+.lesson-content button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.lesson-content button:hover {
+    background-color: #0056b3;
+}
+
+/* Nút 'Back to list' */
+.back-to-list {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+}
+
+.back-to-list:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive cho mục con */
+@media (max-width: 768px) {
+    .lesson-container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .lesson-content {
+        width: 100%;
+    }
+}

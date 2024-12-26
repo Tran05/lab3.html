@@ -70,8 +70,12 @@ h1 {
     display: flex ;
 }
 .card img {
-   max-width: 80px;
-    margin-bottom: 15px;
+    width: 30px; 
+    height: auto; 
+    margin-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 .card button {
     padding: 10px 20px;
